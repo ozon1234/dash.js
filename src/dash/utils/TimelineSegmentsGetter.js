@@ -170,7 +170,7 @@ function TimelineSegmentsGetter(config, isDynamic) {
                     // is 50% of segment duration.
                     if (isStartSegmentForRequestedTimeFound) {
                         segments.push(createSegment(frag, availabilityIdx));
-                    }  else if (scaledTime >= (requiredMediaTime - (frag.d / fTimescale) * 1.5)) {
+                    }  else if (scaledTime > (requiredMediaTime - (frag.d / fTimescale))) {
                         isStartSegmentForRequestedTimeFound = true;
                         segments.push(createSegment(frag, availabilityIdx));
                     }
