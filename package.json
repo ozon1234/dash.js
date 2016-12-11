@@ -1,5 +1,5 @@
 {
-  "name": "dashjs",
+  "name": "ozon1234-dashjs",
   "version": "2.3.0",
   "description": "A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers.",
   "main": "build/es5/index.js",
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dash-Industry-Forum/dash.js.git"
+    "url": "https://github.com/ozon1234/dash.js.git"
   },
   "author": "Dash Industry Forum",
   "license": "BSD-3-Clause"
