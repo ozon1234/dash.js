@@ -288,7 +288,10 @@ function AbrController() {
 
         if (!isInt) throw new Error('argument is not an integer');
 
-        if (newQuality !== oldQuality && newQuality >= 0 && newQuality <= getTopQualityIndexFor(type, id)) {
+        if (newQuality === oldQuality) {
+            return;
+        }
+        if (!reason || (newQuality >= 0 && newQuality <= getTopQualityIndexFor(type, id))) {
             changeQuality(type, streamInfo, oldQuality, newQuality, reason);
         }
     }
